@@ -113,33 +113,33 @@ a:focus {
 
 @keyframes globe {
     0% {
-        fill: var(--clr-primary);
+        fill: var(--clr-tertiary);
         margin-left: 20%;
     }
     12.5% {
-        fill: var(--clr-text);
+        fill: var(--clr-primary);
     }
     25% {
         fill: var(--clr-secondary);
     }
     37.5% {
-        fill: var(--clr-text);
+        fill: var(--clr-primary);
     }
     50% {
-        fill: var(--clr-primary);
+        fill: var(--clr-tertiary);
         margin-left: 74.5%;
     }
     62.5% {
-        fill: var(--clr-text);
+        fill: var(--clr-primary);
     }
     75% {
         fill: var(--clr-secondary);
     }
     87.5% {
-        fill: var(--clr-text);
+        fill: var(--clr-primary);
     }
     100% {
-        fill: var(--clr-primary);
+        fill: var(--clr-tertiary);
         margin-left: 20%; 
     }
 }
