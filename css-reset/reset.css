@@ -89,7 +89,7 @@ h3 {
 }
 
 a {
-    color: var(--clr-text);
+    color: var(--clr-primary);
     font-weight: bold;
     text-decoration: none;
 }
