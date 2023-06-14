@@ -9,9 +9,9 @@
     --clr-black: rgb(12, 12, 12);
     --clr-white: rgb(241, 241, 241);
     /* FONT STYLES */
-    --ff-head: 'sans-serif';
-    --ff-body: 'sans-serif';
-    --ff-accent: 'sans-serif';
+    --ff-head: sans-serif;
+    --ff-body: sans-serif;
+    --ff-accent: sans-serif;
     /* TYPOGRAPHY SCALE */
     --fs-300: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
     --fs-400: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
@@ -40,10 +40,12 @@
     box-sizing: border-box;
 }
 
+/* *Activate border to see your elements highlighted for your convenience* */
 * {
     margin: 0;
+    /* border: 1px solid red; */
 }
-
+/* ** */
 html {
     color-scheme: light dark;
 }
@@ -71,6 +73,7 @@ h6 {
     color: var(--clr-text);
     font-family: var(--ff-head);
     line-height: 1.1;
+    text-align: center;
 }
 
 h1 {
@@ -97,11 +100,42 @@ a:focus {
 }
 
 .site-wrapper {
-    width: min(100% - 4rem, 55ch);
+    width: min(100% - 2rem, 100ch);
     margin-inline: auto;
 }
 
-/* selects everything except for first child */
 .site-flow > * + * {
-    margin-top: 1em;
+    margin-top: var(--flow-content, 1em);
+}
+
+
+/* ***** DELETE EVERYTHING BELOW THIS LINE, FOR DEMO PURPOSES ONLY ***** */
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    --flow-content: 5em;
+}
+
+.color-scheme {
+    width: 15%;
+    height: 3em;
+}
+
+.color-scheme p {
+    text-align: center;
+    line-height: 3.5em;
+    height: 3em;
+    font-size: var(--fs-300);
+}
+
+.primary {
+    background-color: var(--clr-primary);
+}
+
+.secondary {
+    background-color: var(--clr-secondary);
+}
+.tertiary {
+    background-color: var(--clr-tertiary);
 }
