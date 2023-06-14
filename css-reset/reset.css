@@ -25,12 +25,12 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --clr-text: hsl();
-        --clr-body: hsl();
-        --clr-background: hsl();
-        --clr-primary: hsl();
-        --clr-secondary: hsl();
-        --clr-tertiary: hsl(); 
+        --clr-text: hsl(255, 40%, 98%);
+        --clr-body: hsl(255, 40%, 98%);
+        --clr-background: hsl(251, 33%, 10%);
+        --clr-primary: hsl(71, 34%, 47%);
+        --clr-secondary: hsl(251, 35%, 25%);
+        --clr-tertiary: hsl(70, 34%, 27%); 
     }
 }
 
