@@ -176,6 +176,7 @@ a:focus {
 .secondary {
     background-color: var(--clr-secondary);
 }
+
 .tertiary {
     background-color: var(--clr-tertiary);
 }
