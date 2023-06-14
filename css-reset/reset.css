@@ -1,13 +1,13 @@
 :root {
     /* COLOR SCHEME */
-    --clr-text: hsl();
-    --clr-body: hsl();
-    --clr-background: hsl();
-    --clr-primary: hsl();
-    --clr-secondary: hsl();
-    --clr-tertiary: hsl();
-    --clr-black: rgb();
-    --clr-white: rgb();
+    --clr-text: hsl(251, 33%, 10%);
+    --clr-body: hsl(251, 33%, 10%);
+    --clr-background: hsl(255, 40%, 98%);
+    --clr-primary: hsl(71, 34%, 47%);
+    --clr-secondary: hsl(251, 35%, 91%);
+    --clr-tertiary: hsl(70, 34%, 27%);
+    --clr-black: rgb(12, 12, 12);
+    --clr-white: rgb(241, 241, 241);
     /* FONT STYLES */
     --ff-head: 'sans-serif';
     --ff-body: 'sans-serif';
