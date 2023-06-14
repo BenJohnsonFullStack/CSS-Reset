@@ -111,6 +111,46 @@ a:focus {
 
 /* ***** DELETE EVERYTHING BELOW THIS LINE, FOR DEMO PURPOSES ONLY ***** */
 
+@keyframes globe {
+    0% {
+        fill: var(--clr-primary);
+        margin-left: 20%;
+    }
+    12.5% {
+        fill: var(--clr-text);
+    }
+    25% {
+        fill: var(--clr-secondary);
+    }
+    37.5% {
+        fill: var(--clr-text);
+    }
+    50% {
+        fill: var(--clr-primary);
+        margin-left: 74.5%;
+    }
+    62.5% {
+        fill: var(--clr-text);
+    }
+    75% {
+        fill: var(--clr-secondary);
+    }
+    87.5% {
+        fill: var(--clr-text);
+    }
+    100% {
+        fill: var(--clr-primary);
+        margin-left: 20%; 
+    }
+}
+
+#globe {
+    fill: var(--clr-primary);
+    height: 3em;
+    margin-top: 1.5em;
+    animation: globe 4s ease-in-out infinite;
+}
+
 .flex-wrapper {
     display: flex;
     justify-content: center;
