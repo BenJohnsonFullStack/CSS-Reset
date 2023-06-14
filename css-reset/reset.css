@@ -1,0 +1,111 @@
+/* Built with the wonderful help of Kevin Powell (YouTube @KevinPowell, unaffiliated). An advanced reset that overrides browser defaults and applies a simple, basic styling template that I like to kick things off with to help me move a little faster in the early stages of the styling process. Global color variables are set up empty by default and can easily be built to your preferences with a few simple keystrokes. Global typography scale is pre-built to adapt to screen-size and is based on a 16px base value (--fs-400). This reset is mobile responsive out of the box, with support for both light and dark user color scheme preferences, and aims to set the developer up for a smoother, less convulted journey through the process of styling their site. Open-license, free-to-use. Happy Coding!
+
+**Mollusk */
+
+:root {
+    /* COLOR SCHEME */
+    --clr-text: hsl();
+    --clr-body: hsl();
+    --clr-background: hsl();
+    --clr-primary: hsl();
+    --clr-secondary: hsl();
+    --clr-tertiary: hsl();
+    --clr-black: rgb();
+    --clr-white: rgb();
+    /* FONT STYLES */
+    --ff-head: 'sans-serif';
+    --ff-body: 'sans-serif';
+    --ff-accent: 'sans-serif';
+    /* TYPOGRAPHY SCALE */
+    --fs-300: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
+    --fs-400: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
+    --fs-500: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+    --fs-600: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+    --fs-700: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+    --fs-800: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+    --fs-900: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem);
+    --fs-1000: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: hsl();
+        --clr-body: hsl();
+        --clr-background: hsl();
+        --clr-primary: hsl();
+        --clr-secondary: hsl();
+        --clr-tertiary: hsl(); 
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    color-scheme: light dark;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-size: var(--fs-400);
+    font-family: var(--ff-body);
+    line-height: 1.5;
+    color: var(--clr-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--clr-text);
+    font-family: var(--ff-head);
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--fs-1000);
+}
+
+h2 {
+    font-size: var(--fs-700);
+}
+
+h3 {
+    font-size: var(--fs-600);
+}
+
+a {
+    color: var(--clr-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-tertiary);
+}
+
+.site-wrapper {
+    width: min(100% - 4rem, 55ch);
+    margin-inline: auto;
+}
+
+/* selects everything except for first child */
+.site-flow > * + * {
+    margin-top: 1em;
+}
