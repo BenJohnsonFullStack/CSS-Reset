@@ -43,6 +43,7 @@
 /* *Activate border to see your elements highlighted for your convenience* */
 * {
     margin: 0;
+    padding: 0;
     /* border: 1px solid red; */
 }
 /* ** */
