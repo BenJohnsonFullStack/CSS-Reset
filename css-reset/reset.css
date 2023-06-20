@@ -100,7 +100,7 @@ a:focus {
 }
 
 .site-wrapper {
-    width: min(100% - 2rem, 100ch);
+    width: min(100% - 2rem, 75ch);
     margin-inline: auto;
 }
 
