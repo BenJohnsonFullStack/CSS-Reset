@@ -88,10 +88,12 @@ h3 {
     font-size: var(--fs-600);
 }
 
-a {
+a,
+li {
     color: var(--clr-primary);
     font-weight: bold;
     text-decoration: none;
+    list-style: none;
 }
 
 a:hover,
